@@ -53,22 +53,22 @@ export default function AccountPage() {
                 <CardDescription>{t('notifications_desc')}</CardDescription>
                 </CardHeader>
                 <CardContent className="grid gap-6 sm:grid-cols-2">
-                    <div className="flex items-center space-x-4">
+                    <Label htmlFor="live-now" className="flex items-center space-x-4 cursor-pointer">
                         <Switch id="live-now" defaultChecked />
-                        <Label htmlFor="live-now">{t('live_now_alerts')}</Label>
-                    </div>
-                    <div className="flex items-center space-x-4">
+                        <span>{t('live_now_alerts')}</span>
+                    </Label>
+                    <Label htmlFor="new-content" className="flex items-center space-x-4 cursor-pointer">
                         <Switch id="new-content" defaultChecked />
-                        <Label htmlFor="new-content">{t('new_content_added')}</Label>
-                    </div>
-                    <div className="flex items-center space-x-4">
+                        <span>{t('new_content_added')}</span>
+                    </Label>
+                    <Label htmlFor="promotions" className="flex items-center space-x-4 cursor-pointer">
                         <Switch id="promotions" />
-                        <Label htmlFor="promotions">{t('promotions')}</Label>
-                    </div>
-                    <div className="flex items-center space-x-4">
+                        <span>{t('promotions')}</span>
+                    </Label>
+                    <Label htmlFor="casting-calls" className="flex items-center space-x-4 cursor-pointer">
                         <Switch id="casting-calls" />
-                        <Label htmlFor="casting-calls">{t('new_casting_calls')}</Label>
-                    </div>
+                        <span>{t('new_casting_calls')}</span>
+                    </Label>
                 </CardContent>
                  <CardFooter>
                     <Button>{t('save_preferences')}</Button>
