@@ -90,11 +90,6 @@ export default function LivePage() {
                             <ChatMessage name="Sarah" message="Go Anna & Ján! You got this! 💖" avatar="https://picsum.photos/seed/avatar1/100/100" />
                             <ChatMessage name="You" message="Who do you think will win?" avatar="" isUser />
                             <ChatMessage name="Mike" message="Marek is my favorite so far." avatar="https://picsum.photos/seed/avatar4/100/100" />
-                             <ChatMessage name="System" message="Welcome to the live chat! Remember to be respectful." avatar="" />
-                            <ChatMessage name="Alex" message="This is intense! 🔥" avatar="https://picsum.photos/seed/avatar2/100/100" />
-                            <ChatMessage name="Sarah" message="Go Anna & Ján! You got this! 💖" avatar="https://picsum.photos/seed/avatar1/100/100" />
-                            <ChatMessage name="You" message="Who do you think will win?" avatar="" isUser />
-                            <ChatMessage name="Mike" message="Marek is my favorite so far." avatar="https://picsum.photos/seed/avatar4/100/100" />
                         </div>
                     </ScrollArea>
                     <CardFooter className="border-t pt-4">

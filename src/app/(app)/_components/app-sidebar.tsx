@@ -24,7 +24,6 @@ import {
   Wallet,
   User,
   Info,
-  Shield,
   Badge,
 } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -96,5 +95,3 @@ export function AppSidebar() {
     </Sidebar>
   );
 }
-
-    
