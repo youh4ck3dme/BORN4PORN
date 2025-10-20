@@ -1,3 +1,4 @@
+
 export const translations = {
   sk: {
     dashboard: "Dashboard",
@@ -656,7 +657,7 @@ export const translations = {
 export type Language = keyof typeof translations;
 export type TranslationKeys = keyof typeof translations.sk;
 
-const getTranslations = async (lang: Language) => {
+const getTranslations = (lang: Language) => {
     return translations[lang] || translations.sk;
 }
 

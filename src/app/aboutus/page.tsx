@@ -1,4 +1,6 @@
 
+"use client";
+
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { UnicornLogo } from '@/components/logo';
@@ -6,17 +8,10 @@ import { Users, Gamepad2, Brush, Target, Microscope, BrainCircuit } from 'lucide
 import Image from 'next/image';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { CtaButton } from '@/components/ui/CtaButton';
-import { getTranslations } from '@/lib/translations';
-import type { Language } from '@/lib/translations';
+import { useLanguage } from '@/context/language-context';
 
-
-export default async function AboutUsPage({
-  searchParams,
-}: {
-  searchParams: { lang?: Language };
-}) {
-  const lang = searchParams.lang || 'sk';
-  const t = await getTranslations(lang);
+export default function AboutUsPage() {
+  const { t } = useLanguage();
 
   return (
     <div className="flex min-h-screen flex-col bg-background -m-4 sm:-m-6 lg:-m-8">
@@ -29,7 +24,7 @@ export default async function AboutUsPage({
           <div className="flex items-center gap-2 md:gap-4">
              <LanguageSwitcher />
             <CtaButton asChild size="sm">
-                <Link href="/login">{t.home_login}</Link>
+                <Link href="/login">{t('home_login')}</Link>
             </CtaButton>
           </div>
         </div>
