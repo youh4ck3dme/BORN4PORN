@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -37,12 +36,7 @@ export function InstallPwaBanner() {
       return;
     }
     installPrompt.prompt();
-    installPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
+    installPrompt.userChoice.then(() => {
       setInstallPrompt(null);
       setIsVisible(false);
     });
