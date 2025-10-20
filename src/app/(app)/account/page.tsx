@@ -55,19 +55,19 @@ export default function AccountPage() {
                 <CardContent className="grid gap-6 sm:grid-cols-2">
                     <div className="flex items-center space-x-4">
                         <Switch id="live-now" defaultChecked />
-                        <Label htmlFor="live-now" className="flex-1 cursor-pointer">{t('live_now_alerts')}</Label>
+                        <Label htmlFor="live-now">{t('live_now_alerts')}</Label>
                     </div>
                     <div className="flex items-center space-x-4">
                         <Switch id="new-content" defaultChecked />
-                        <Label htmlFor="new-content" className="flex-1 cursor-pointer">{t('new_content_added')}</Label>
+                        <Label htmlFor="new-content">{t('new_content_added')}</Label>
                     </div>
                     <div className="flex items-center space-x-4">
                         <Switch id="promotions" />
-                        <Label htmlFor="promotions" className="flex-1 cursor-pointer">{t('promotions')}</Label>
+                        <Label htmlFor="promotions">{t('promotions')}</Label>
                     </div>
                     <div className="flex items-center space-x-4">
                         <Switch id="casting-calls" />
-                        <Label htmlFor="casting-calls" className="flex-1 cursor-pointer">{t('new_casting_calls')}</Label>
+                        <Label htmlFor="casting-calls">{t('new_casting_calls')}</Label>
                     </div>
                 </CardContent>
                  <CardFooter>
