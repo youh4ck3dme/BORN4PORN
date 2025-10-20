@@ -41,6 +41,7 @@ export default async function AboutUsPage({ searchParams }: { searchParams: { la
                     className="object-cover opacity-30"
                     data-ai-hint="fantasy landscape dark"
                     priority
+                    quality={100}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
             </div>

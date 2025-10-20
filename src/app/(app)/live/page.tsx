@@ -33,7 +33,7 @@ export default function LivePage() {
             <div className="lg:col-span-2 flex flex-col gap-6">
                 <Card className="overflow-hidden">
                     <div className="relative aspect-video bg-black flex items-center justify-center">
-                        <Image src="/eroticon.png" fill alt="Live Stream" className="object-cover opacity-30" data-ai-hint="dark room lights" />
+                        <Image src="/eroticon.png" fill alt="Live Stream" className="object-cover opacity-30" data-ai-hint="dark room lights" quality={100} />
                          <div className="relative z-10 text-center p-4">
                             <h2 className="text-2xl sm:text-4xl font-headline font-bold text-white drop-shadow-lg tracking-wide-3">{t('live_stream_title')}</h2>
                             <p className="text-primary animate-pulse font-semibold mt-2">{t('live_now')}</p>

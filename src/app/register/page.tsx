@@ -70,6 +70,7 @@ export default function RegisterPage() {
             className="object-cover opacity-50"
             data-ai-hint="dark room lights"
             priority
+            quality={100}
         />
         <div className="absolute top-4 right-4 z-20 flex items-center gap-4">
           <LanguageSwitcher />

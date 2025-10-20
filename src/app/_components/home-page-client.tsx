@@ -102,6 +102,7 @@ const marketKeys: ('market_global' | 'market_cz' | 'market_sk' | 'market_trend')
                     className="object-cover opacity-30"
                     data-ai-hint="dark room lights"
                     priority
+                    quality={100}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
             </div>

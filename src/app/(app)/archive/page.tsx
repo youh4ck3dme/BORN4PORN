@@ -88,6 +88,7 @@ export default function ArchivePage() {
                   alt={video.title}
                   width={400}
                   height={225}
+                  quality={100}
                   className="aspect-video object-cover w-full group-hover:scale-105 transition-transform duration-300"
                   data-ai-hint={video.imageHint}
                 />
