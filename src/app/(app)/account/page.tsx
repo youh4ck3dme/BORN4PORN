@@ -53,22 +53,22 @@ export default function AccountPage() {
                 <CardDescription>{t('notifications_desc')}</CardDescription>
                 </CardHeader>
                 <CardContent className="grid gap-6 sm:grid-cols-2">
-                    <Label htmlFor="live-now" className="flex items-center space-x-4 cursor-pointer">
+                    <div className="flex items-center space-x-2">
                         <Switch id="live-now" defaultChecked />
-                        <span>{t('live_now_alerts')}</span>
-                    </Label>
-                    <Label htmlFor="new-content" className="flex items-center space-x-4 cursor-pointer">
+                        <Label htmlFor="live-now" className="cursor-pointer">{t('live_now_alerts')}</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
                         <Switch id="new-content" defaultChecked />
-                        <span>{t('new_content_added')}</span>
-                    </Label>
-                    <Label htmlFor="promotions" className="flex items-center space-x-4 cursor-pointer">
+                        <Label htmlFor="new-content" className="cursor-pointer">{t('new_content_added')}</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
                         <Switch id="promotions" />
-                        <span>{t('promotions')}</span>
-                    </Label>
-                    <Label htmlFor="casting-calls" className="flex items-center space-x-4 cursor-pointer">
+                        <Label htmlFor="promotions" className="cursor-pointer">{t('promotions')}</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
                         <Switch id="casting-calls" />
-                        <span>{t('new_casting_calls')}</span>
-                    </Label>
+                        <Label htmlFor="casting-calls" className="cursor-pointer">{t('new_casting_calls')}</Label>
+                    </div>
                 </CardContent>
                  <CardFooter>
                     <Button>{t('save_preferences')}</Button>
