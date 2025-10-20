@@ -10,7 +10,11 @@ import { getTranslations } from '@/lib/translations';
 import type { Language } from '@/lib/translations';
 
 
-export default async function AboutUsPage({ searchParams }: { searchParams: { lang?: Language } }) {
+export default async function AboutUsPage({
+  searchParams,
+}: {
+  searchParams: { lang?: Language };
+}) {
   const lang = searchParams.lang || 'sk';
   const t = await getTranslations(lang);
 
