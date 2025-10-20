@@ -32,7 +32,7 @@ export default async function AboutUsPage({ searchParams }: { searchParams: { la
       </header>
 
       <main className="flex-1">
-        <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden text-center">
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden text-center p-4">
             <div className="absolute inset-0 z-0">
                  <Image 
                     src="/eroticon.png" 
@@ -59,49 +59,49 @@ export default async function AboutUsPage({ searchParams }: { searchParams: { la
             </div>
         </section>
 
-        <section id="discover" className="container my-12 md:my-24 px-4 sm:px-6 lg:px-8 text-center">
-             <div className="text-center mb-12">
-                <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide-3">Obsah Balíka: Unicorn & Gametusy</h2>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start text-center">
-                <Card className="bg-muted/50 text-center">
-                    <CardHeader className="items-center">
-                        <CardTitle className="flex flex-col md:flex-row items-center gap-3 font-headline text-2xl md:text-3xl tracking-wide-3">
-                            <Users className="h-8 w-8 text-primary"/>
-                            Agentúra Unicorn: Ekosystém pre Dospelých
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4 text-muted-foreground text-center">
-                        <p className="max-w-prose mx-auto">Unicorn je prelomová erotická personálna agentúra, ktorá vytvára profesionálny a bezpečný ekosystém. Spájame a zastrešujeme najzaujímavejšie tváre a talenty v odvetví:</p>
-                        <ul className="list-none space-y-2 inline-block text-left">
-                            <li>Performeri a Modeli</li>
-                            <li>Tvorcovia Obsahu & Producenti</li>
-                            <li>Entertaineri & Eskort</li>
-                            <li>Online Talenty (Livechat, OF)</li>
-                        </ul>
-                    </CardContent>
-                </Card>
-                 <Card className="bg-muted/50 text-center">
-                    <CardHeader className="items-center">
-                        <CardTitle className="flex flex-col md:flex-row items-center gap-3 font-headline text-2xl md:text-3xl tracking-wide-3">
-                             <Gamepad2 className="h-8 w-8 text-primary"/>
-                             Gametusy: Interaktívna Fantasy Séria
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4 text-muted-foreground text-center">
-                       <p className="max-w-prose mx-auto">GAMETUSY je vlajkový projekt – 18+ séria, ktorá spája filmovú kvalitu s hernou kultúrou. Nejde len o pasívne sledovanie; diváci sa stávajú spolutvorcami.</p>
-                        <ul className="list-none space-y-2 inline-block text-left">
-                            <li><strong>Interaktivita ako v hre:</strong> Diváci hlasujú a rozhodujú o ďalšom smerovaní príbehu.</li>
-                            <li><strong>Gamifikácia zážitku:</strong> Členovia získavajú virtuálnu menu na hlasovanie.</li>
-                            <li><strong>Komunita a Cosplay:</strong> Inšpirované hernými archetypmi a cosplay kultúrou.</li>
-                        </ul>
-                    </CardContent>
-                </Card>
+        <section id="discover" className="w-full min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+             <div className="container text-center">
+                <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide-3 mb-12">Obsah Balíka: Unicorn & Gametusy</h2>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start text-center">
+                    <Card className="bg-muted/50 text-center">
+                        <CardHeader className="items-center">
+                            <CardTitle className="flex flex-col md:flex-row items-center gap-3 font-headline text-2xl md:text-3xl tracking-wide-3">
+                                <Users className="h-8 w-8 text-primary"/>
+                                Agentúra Unicorn: Ekosystém pre Dospelých
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-4 text-muted-foreground text-center">
+                            <p className="max-w-prose mx-auto">Unicorn je prelomová erotická personálna agentúra, ktorá vytvára profesionálny a bezpečný ekosystém. Spájame a zastrešujeme najzaujímavejšie tváre a talenty v odvetví:</p>
+                            <ul className="list-none space-y-2 inline-block text-left">
+                                <li>Performeri a Modeli</li>
+                                <li>Tvorcovia Obsahu & Producenti</li>
+                                <li>Entertaineri & Eskort</li>
+                                <li>Online Talenty (Livechat, OF)</li>
+                            </ul>
+                        </CardContent>
+                    </Card>
+                     <Card className="bg-muted/50 text-center">
+                        <CardHeader className="items-center">
+                            <CardTitle className="flex flex-col md:flex-row items-center gap-3 font-headline text-2xl md:text-3xl tracking-wide-3">
+                                 <Gamepad2 className="h-8 w-8 text-primary"/>
+                                 Gametusy: Interaktívna Fantasy Séria
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-4 text-muted-foreground text-center">
+                           <p className="max-w-prose mx-auto">GAMETUSY je vlajkový projekt – 18+ séria, ktorá spája filmovú kvalitu s hernou kultúrou. Nejde len o pasívne sledovanie; diváci sa stávajú spolutvorcami.</p>
+                            <ul className="list-none space-y-2 inline-block text-left">
+                                <li><strong>Interaktivita ako v hre:</strong> Diváci hlasujú a rozhodujú o ďalšom smerovaní príbehu.</li>
+                                <li><strong>Gamifikácia zážitku:</strong> Členovia získavajú virtuálnu menu na hlasovanie.</li>
+                                <li><strong>Komunita a Cosplay:</strong> Inšpirované hernými archetypmi a cosplay kultúrou.</li>
+                            </ul>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
         </section>
 
-        <section className="w-full bg-muted/50 py-12 md:py-24 text-center">
-            <div className="container max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
+        <section className="w-full bg-muted/50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+            <div className="container max-w-6xl text-center">
                  <div className="mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide-3">Branding & Vizuálna Identita</h2>
                     <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground md:text-lg">
@@ -128,26 +128,28 @@ export default async function AboutUsPage({ searchParams }: { searchParams: { la
             </div>
         </section>
 
-        <section id="investors" className="container my-12 md:my-24 px-4 sm:px-6 lg:px-8 text-center">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-center">
-                <div className="flex flex-col items-center">
-                     <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-wide-3">Plán & Budúcnosť Projektu</h2>
-                     <p className="mt-4 text-muted-foreground md:text-lg max-w-prose">Gametusy je len začiatok. Naša stratégia je postavená na inováciách a expanzii. Plánujeme rozšíriť našu produkciu do ďalších žánrov (sci-fi, horor) a neustále posúvať hranice interaktívnej zábavy pre dospelých.</p>
-                     <Card className="mt-6 bg-primary/10 border-primary text-center">
-                         <CardHeader className="items-center">
-                             <CardTitle className="flex flex-col md:flex-row items-center gap-3 font-headline text-xl md:text-2xl tracking-wide-3">
-                                <Microscope className="h-8 w-8 text-primary"/>
-                                Inovácia: Warhol 4DX
-                            </CardTitle>
-                         </CardHeader>
-                         <CardContent>
-                             <p className="text-muted-foreground max-w-prose mx-auto">Našou najväčšou ambíciou je "Warhol 4DX" – plne imerzívny, multizmyslový zážitok. Nejde len o sledovanie, ale o cítenie. Predstavte si 360° VR filmy, haptickú odozvu a živé predstavenia, kde sa stierajú hranice medzi divákom a dejom. Je to budúcnosť, kde sa umenie, technológia a erotika spájajú do jedného dychberúceho celku.</p>
-                         </CardContent>
-                     </Card>
-                </div>
-                 <div className="flex flex-col items-center">
-                    <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-wide-3">Trhový Potenciál: Prečo Gametusy Funguje</h2>
-                    <p className="mt-4 text-muted-foreground md:text-lg max-w-prose">Gametusy nie je len kreatívny experiment; je to produkt postavený na reálnom dopyte. Herná kultúra a erotika sa už dávno prepojili. Postavy z videohier ako Lara Croft alebo postavy z Resident Evil a Nintenda patria medzi najvyhľadávanejšie na stránkach pre dospelých. My tento dopyt transformujeme na prémiový, interaktívny zážitok, kde fanúšikovia môžu konečne ovplyvniť osud svojich obľúbených archetypov.</p>
+        <section id="investors" className="w-full min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+            <div className="container">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-center">
+                    <div className="flex flex-col items-center">
+                         <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-wide-3">Plán & Budúcnosť Projektu</h2>
+                         <p className="mt-4 text-muted-foreground md:text-lg max-w-prose">Gametusy je len začiatok. Naša stratégia je postavená na inováciách a expanzii. Plánujeme rozšíriť našu produkciu do ďalších žánrov (sci-fi, horor) a neustále posúvať hranice interaktívnej zábavy pre dospelých.</p>
+                         <Card className="mt-6 bg-primary/10 border-primary text-center">
+                             <CardHeader className="items-center">
+                                 <CardTitle className="flex flex-col md:flex-row items-center gap-3 font-headline text-xl md:text-2xl tracking-wide-3">
+                                    <Microscope className="h-8 w-8 text-primary"/>
+                                    Inovácia: Warhol 4DX
+                                </CardTitle>
+                             </CardHeader>
+                             <CardContent>
+                                 <p className="text-muted-foreground max-w-prose mx-auto">Našou najväčšou ambíciou je "Warhol 4DX" – plne imerzívny, multizmyslový zážitok. Nejde len o sledovanie, ale o cítenie. Predstavte si 360° VR filmy, haptickú odozvu a živé predstavenia, kde sa stierajú hranice medzi divákom a dejom. Je to budúcnosť, kde sa umenie, technológia a erotika spájajú do jedného dychberúceho celku.</p>
+                             </CardContent>
+                         </Card>
+                    </div>
+                     <div className="flex flex-col items-center">
+                        <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-wide-3">Trhový Potenciál: Prečo Gametusy Funguje</h2>
+                        <p className="mt-4 text-muted-foreground md:text-lg max-w-prose">Gametusy nie je len kreatívny experiment; je to produkt postavený na reálnom dopyte. Herná kultúra a erotika sa už dávno prepojili. Postavy z videohier ako Lara Croft alebo postavy z Resident Evil a Nintenda patria medzi najvyhľadávanejšie na stránkach pre dospelých. My tento dopyt transformujeme na prémiový, interaktívny zážitok, kde fanúšikovia môžu konečne ovplyvniť osud svojich obľúbených archetypov.</p>
+                    </div>
                 </div>
             </div>
         </section>
