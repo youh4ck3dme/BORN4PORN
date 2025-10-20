@@ -1,9 +1,11 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from '@/context/language-context';
 import { Bebas_Neue, Poppins } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import { InstallPwaBanner } from '@/components/install-pwa-banner';
 
 export const metadata: Metadata = {
   title: 'Eroticon Platform',
@@ -37,6 +39,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <Toaster />
+          <InstallPwaBanner />
         </LanguageProvider>
       </body>
     </html>
