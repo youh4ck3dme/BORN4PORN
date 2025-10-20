@@ -10,7 +10,7 @@ This codebase is clean, secure, and ready for deployment.
 - **TypeScript**: For robust, type-safe code.
 - **Tailwind CSS & ShadCN UI**: For beautiful and responsive design.
 - **Full Internationalization (i18n)**: Supports SK, EN, AR, RU languages.
-- **Firebase Ready**: Optimized for deployment on Firebase App Hosting.
+- **PWA Ready**: Configured for installation on mobile devices.
 
 ## Getting Started
 
@@ -30,4 +30,4 @@ The application will be available at `http://localhost:9002`.
 
 ## Deployment
 
-This project is optimized for deployment on Firebase App Hosting.
+This project is optimized for deployment on Vercel.
