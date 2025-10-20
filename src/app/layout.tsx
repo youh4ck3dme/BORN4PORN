@@ -8,7 +8,6 @@ import { cn } from '@/lib/utils';
 export const metadata: Metadata = {
   title: 'Eroticon Platform',
   description: 'A new perspective on the adult entertainment industry.',
-  manifest: '/manifest.json',
 };
 
 const bebas_neue = Bebas_Neue({
@@ -32,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={cn("font-body antialiased", bebas_neue.variable, poppins.variable)}>
         <LanguageProvider>
