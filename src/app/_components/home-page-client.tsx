@@ -9,7 +9,7 @@ import { LanguageSwitcher } from '@/components/language-switcher';
 import { CtaButton } from '@/components/ui/CtaButton';
 import { useLanguage } from '@/context/language-context';
 import type { TranslationKeys } from '@/lib/translations';
-import { HomeTabsWrapper } from './home-tabs-wrapper';
+import { HomeTabsWrapper } from '@/app/_components/home-tabs-wrapper';
 
 
 export function HomePageClient() {
